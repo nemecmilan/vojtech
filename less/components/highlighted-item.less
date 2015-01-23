@@ -1,0 +1,26 @@
+@import "../core/variables";
+.highlighted-item{
+  height: 40px;
+  margin: 10px 0;
+  text-align: center;
+
+  &--checked{
+    background: @beta url("../img/checked-white.png") no-repeat center;
+    border-radius: 40px 40px 40px 40px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+  }
+
+  &__title{
+    background-color: @beta;
+    border-radius: 40px 40px 40px 40px;
+    color: #ffffff;
+    display: inline-block;
+    height: 40px;
+    margin: 0 0 0 0px;
+    padding: 7px 15px 0;
+    position: relative;
+    top: -11px;
+  }
+}

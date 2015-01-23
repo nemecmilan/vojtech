@@ -15,12 +15,16 @@
   /* IE9 v kompatibilním režimu */
   /* Starší Safari, Android, iOS */
 }
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 100%;
   font-family: "ubuntu-light", Georgia, serif;
 }
 .secondary {
   font-size: 131.25%;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -58,4 +62,27 @@ p {
 }
 .nav__item a {
   color: #ffffff;
+}
+.highlighted-item {
+  height: 40px;
+  margin: 10px 0;
+  text-align: center;
+}
+.highlighted-item--checked {
+  background: #27ce79 url("../img/checked-white.png") no-repeat center;
+  border-radius: 40px 40px 40px 40px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+.highlighted-item__title {
+  background-color: #27ce79;
+  border-radius: 40px 40px 40px 40px;
+  color: #ffffff;
+  display: inline-block;
+  height: 40px;
+  margin: 0 0 0 0px;
+  padding: 7px 15px 0;
+  position: relative;
+  top: -11px;
 }
