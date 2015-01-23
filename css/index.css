@@ -1,9 +1,61 @@
-body {
-  padding: 5px;
-  margin: 55px;
-  border: 1px solid #ffffff;
+@import "../node_modules/normalize.css/normalize.css";
+@font-face {
+  font-family: "ubuntu-reguler";
+  src: url("fonts/Ubuntu-Regular.eot");
+  src: url("fonts/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("fonts/Ubuntu-Regular.woff") format("woff"), /* Všechny moderní prohlížeče */ url("fonts/Ubuntu-Regular.ttf") format("truetype");
+  
+  /* IE9 v kompatibilním režimu */
+  /* Starší Safari, Android, iOS */
 }
-h1 {
-  font: "meiryo ui", verdana, arial;
-  font-size: 15px;
+@font-face {
+  font-family: "ubuntu-light";
+  src: url("fonts/Ubuntu-Light.eot");
+  src: url("fonts/Ubuntu-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("fonts/Ubuntu-Light.woff") format("woff"), /* Všechny moderní prohlížeče */ url("fonts/Ubuntu-Light.ttf") format("truetype");
+  
+  /* IE9 v kompatibilním režimu */
+  /* Starší Safari, Android, iOS */
+}
+body {
+  font-size: 100%;
+  font-family: "ubuntu-light", Georgia, serif;
+}
+.secondary {
+  font-size: 131.25%;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  height: 125px;
+  text-align: center;
+  width: 100%;
+}
+.header__logo {
+  font-size: 200%;
+  font-variant: small-caps;
+  padding: 10px 0 15px;
+}
+.header strong {
+  display: block;
+  font-size: 56.25%;
+}
+.nav {
+  margin: 0 auto;
+  padding: 11px 0;
+  width: 100%;
+}
+.nav__item {
+  float: left;
+  font-size: 88.88888889%;
+  text-transform: uppercase;
+  list-style: none;
+  width: 33%;
+}
+.nav__item a {
+  color: #ffffff;
 }

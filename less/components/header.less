@@ -1,0 +1,39 @@
+@import "../core/variables";
+
+.header{
+  background-color: @dark-transparent;
+  color: #ffffff;
+  height: 125px;
+  text-align: center;
+  width: 100%;
+
+  &__logo{
+    font-size: percentage(32/16);
+    font-variant: small-caps;
+    padding: 10px 0 15px;
+  }
+
+  strong{
+    display: block;
+    font-size: percentage(18/32);
+  }
+}
+
+.nav{
+  margin: 0 auto;
+  padding: 11px 0;
+  width: 100%;
+
+  &__item{
+    float: left;
+    font-size: percentage(16/18);
+    text-transform: uppercase;
+    list-style: none;
+    width: 33%;
+  }
+
+  &__item a{
+    color: #ffffff;
+  }
+}
+
