@@ -1,0 +1,9 @@
+body {
+  padding: 5px;
+  margin: 55px;
+  border: 1px solid #ffffff;
+}
+h1 {
+  font: "meiryo ui", verdana, arial;
+  font-size: 15px;
+}
