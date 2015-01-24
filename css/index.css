@@ -19,6 +19,7 @@
   box-sizing: border-box;
 }
 body {
+  background: url("../img/construction-tools-small.jpg") no-repeat center -35px;
   font-size: 100%;
   font-family: "ubuntu-light", Georgia, serif;
 }
@@ -26,11 +27,39 @@ body {
   font-size: 131.25%;
   margin: 0;
 }
+.tertiary {
+  font-size: 106.25%;
+  margin: 0;
+  padding-left: 8px;
+}
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 p {
   margin: 0;
+}
+.welcome {
+  margin: 20px 0;
+  text-align: center;
+}
+.welcome__phone {
+  border: 1px solid #ffffff;
+  border-radius: 50px 50px 50px 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: inline-block;
+  font-size: 162.5%;
+  height: 50px;
+  margin: 30px 0 0 0;
+  padding: 9px 17px 0;
+}
+.section__title {
+  padding: 20px 20px 15px;
+  margin: 0;
+  text-align: center;
 }
 .header {
   background-color: rgba(0, 0, 0, 0.6);
@@ -85,4 +114,56 @@ p {
   padding: 7px 15px 0;
   position: relative;
   top: -11px;
+}
+.services {
+  background-color: #fafafa;
+  text-align: center;
+}
+.services__list {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px 10px 10px;
+  padding: 0 5px 5px 17px;
+}
+.services ul {
+  margin: 0;
+  padding: 0;
+}
+.services li {
+  background: url("../img/dash.gif") no-repeat left center;
+  list-style: none;
+  padding: 0 0 0 8px;
+  text-align: left;
+}
+.plus-icon {
+  background-color: #4b4b4b;
+  height: 4px;
+  left: -23px;
+  position: relative;
+  top: 12px;
+  width: 18px;
+}
+.plus-icon span {
+  background-color: #4b4b4b;
+  height: 18px;
+  display: block;
+  left: 7px;
+  position: relative;
+  top: -7px;
+  width: 4px;
+}
+.button {
+  border: 1px solid #4b4b4b;
+  border-radius: 38px 38px 38px 38px;
+  display: table;
+  height: 38px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+.button a {
+  color: #4b4b4b;
+  display: block;
+  height: 40px;
+  padding: 10px 6px;
 }
