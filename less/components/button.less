@@ -3,16 +3,36 @@
 .button{
   border: 1px solid @alpha;
   border-radius: 38px 38px 38px 38px;
-  display: table;
-  height: 38px;
-  margin: 0 auto;
-  padding: 0 10px;
+  clear: both;
+  display: block;
+  height: 36px;
+  margin: 15px auto;
   text-transform: uppercase;
+  width: 66px;
+
+  &:hover{
+    box-shadow: 0px 0px 5px #000000;
+  }
 
   a{
     color: @alpha;
     display: block;
-    height: 40px;
-    padding: 10px 6px;
+    height: 34px;
+    padding: 8px 15px;
   }
+
+
+  &--light{
+    border-color: #ffffff;
+
+    &:hover{
+      background-color: @beta;
+      box-shadow: 0px 0px 5px #fff;
+    }
+
+    a{
+      color: #ffffff;
+    }
+  }
+
 }

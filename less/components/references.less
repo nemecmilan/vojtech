@@ -1,0 +1,53 @@
+@import "../core/variables";
+
+.references{
+  background-color: @alpha;
+  float: left;
+
+  &__collection{
+    float: left;
+    margin: 0 0 15px 0;
+  }
+
+  &__item{
+    display: block;
+    float: left;
+    font-size: 0;
+    width: 100%;
+
+    @media screen and (min-width: 400px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 550px) {
+      width: 33.333333333%;
+    }
+    @media screen and (min-width: 800px) {
+      width: 25%;
+    }
+  }
+    &__item:nth-last-of-type(5),
+    &__item:nth-last-of-type(4),
+    &__item:nth-last-of-type(3),
+    &__item:nth-last-of-type(2){
+        display: none;
+    }
+
+    &__item:nth-last-child(4),
+    &__item:nth-last-child(5){
+        @media screen and (min-width: 550px) {
+          display: block;
+        }
+    }
+
+    &__item:nth-last-child(3),
+    &__item:nth-last-child(2){
+      @media screen and (min-width: 800px) {
+        display: block;
+      }
+    }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
