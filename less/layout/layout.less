@@ -1,7 +1,11 @@
 @import "../core/variables";
 .welcome{
-  margin: 20px 0;
   text-align: center;
+  background: url("../img/construction-tools-small.jpg") no-repeat center top;
+
+  @media screen and (min-width: 769px) {
+    background: url("../img/construction-tools-medium.jpg") no-repeat center;
+  }
 
   &__phone{
     border: 1px solid #ffffff;
@@ -11,7 +15,7 @@
     display: inline-block;
     font-size: percentage(26/16);
     height: 50px;
-    margin: 30px 0 0 0;
+    margin: 25px 0;
     padding: 9px 17px 0;
   }
 }
@@ -27,6 +31,8 @@
     }
   }
 }
+
+@import "../components/header";
 
 .contact{
   clear: both;
@@ -55,7 +61,7 @@
 
   p{
     color: #ffffff;
-    padding: 7px 0 0 0;
+    padding: 17px 0 0 0;
     font-size: 13px;
   }
   a{

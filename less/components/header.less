@@ -2,20 +2,38 @@
 
 .header{
   background-color: @dark-transparent;
-  color: #ffffff;
   height: 125px;
+  margin: 0 0 20px 0;
   text-align: center;
   width: 100%;
+
+  @media screen and (min-width: 550px){
+    height: 75px;
+  }
 
   &__logo{
     font-size: percentage(32/16);
     font-variant: small-caps;
-    padding: 10px 0 15px;
+    padding: 10px 0 10px;
+
+    @media screen and (min-width: 550px){
+      float: left;
+      padding: 6px 0 0 20px;
+    }
+    a{
+      color: #ffffff;
+    }
   }
 
   strong{
     display: block;
     font-size: percentage(18/32);
+
+    @media screen and (min-width: 550px){
+      text-align: left;
+      padding: 0 0 0 3px;
+      margin-top: -3px;
+    }
   }
 }
 
@@ -24,16 +42,47 @@
   padding: 11px 0;
   width: 100%;
 
+  @media screen and (min-width: 550px){
+    float: right;
+    margin: 0 15px 0 0;
+    padding: 0;
+    width: auto;
+    height: 75px;
+  }
+
   &__item{
     float: left;
     font-size: percentage(16/18);
     text-transform: uppercase;
     list-style: none;
     width: 33%;
+
+    @media screen and (min-width: 550px){
+      width: 90px;
+      height: 75px;
+      display: block;
+
+      &:hover{
+        background-color: rgba(240, 240, 240, 0.34);
+      }
+    }
   }
 
   &__item a{
     color: #ffffff;
+    &:hover{
+      text-decoration: underline;
+    }
+
+    @media screen and (min-width: 550px){
+      display: block;
+      height: 75px;
+      padding: 27px 0 0 0;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
