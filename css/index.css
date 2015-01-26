@@ -19,7 +19,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #fafafa;
+  box-shadow: 0 0 10px #808080;
   font-size: 100%;
   font-family: "ubuntu-light", Georgia, serif;
   margin: 0 auto;
@@ -40,14 +40,46 @@ a {
 p {
   margin: 0;
 }
+.section__title {
+  padding: 15px 20px;
+  margin: 0;
+  text-align: center;
+}
+.section__title--light {
+  color: #ffffff;
+}
+.contact {
+  clear: both;
+  text-align: center;
+}
+.contact p {
+  display: inline-block;
+  height: 45px;
+  margin: 3px 0;
+  padding: 12px 0 0 55px;
+}
+.contact .phone {
+  background: url("../img/phone-icon.png") no-repeat left center;
+}
+.contact .email {
+  background: url("../img/email-icon.png") no-repeat left center;
+}
+.footer {
+  background-color: #4b4b4b;
+  height: 50px;
+  text-align: center;
+}
+.footer p {
+  color: #ffffff;
+  padding: 17px 0 0 0;
+  font-size: 13px;
+}
+.footer a {
+  color: #ffffff;
+}
 .welcome {
   text-align: center;
   background: url("../img/construction-tools-small.jpg") no-repeat center top;
-}
-@media screen and (min-width: 769px) {
-  .welcome {
-    background: url("../img/construction-tools-medium.jpg") no-repeat center;
-  }
 }
 .welcome__phone {
   border: 1px solid #ffffff;
@@ -59,14 +91,6 @@ p {
   height: 50px;
   margin: 25px 0;
   padding: 9px 17px 0;
-}
-.section__title {
-  padding: 15px 20px;
-  margin: 0;
-  text-align: center;
-}
-.section__title--light {
-  color: #ffffff;
 }
 .header {
   background-color: rgba(0, 0, 0, 0.6);
@@ -152,34 +176,32 @@ p {
     text-decoration: none;
   }
 }
-.contact {
-  clear: both;
-  text-align: center;
+.bg1 {
+  background: url("../img/welcome_background/1.jpg") no-repeat center top;
 }
-.contact p {
-  display: inline-block;
-  height: 45px;
-  margin: 3px 0;
-  padding: 12px 0 0 55px;
+.bg2 {
+  background: url("../img/welcome_background/2.jpg") no-repeat center -50px;
 }
-.contact .phone {
-  background: url("../img/phone-icon.png") no-repeat left center;
+.bg3 {
+  background: url("../img/welcome_background/3.jpg") no-repeat center top;
 }
-.contact .email {
-  background: url("../img/email-icon.png") no-repeat left center;
+.bg4 {
+  background: url("../img/welcome_background/4.jpg") no-repeat center;
 }
-.footer {
-  background-color: #4b4b4b;
-  height: 50px;
-  text-align: center;
+.bg5 {
+  background: url("../img/welcome_background/5.jpg") no-repeat center;
 }
-.footer p {
-  color: #ffffff;
-  padding: 17px 0 0 0;
-  font-size: 13px;
+.bg6 {
+  background: url("../img/welcome_background/6.jpg") no-repeat center -40px;
 }
-.footer a {
-  color: #ffffff;
+.bg7 {
+  background: url("../img/welcome_background/7.jpg") no-repeat center;
+}
+.bg8 {
+  background: url("../img/welcome_background/8.jpg") no-repeat center;
+}
+.bg9 {
+  background: url("../img/welcome_background/9.jpg") no-repeat center;
 }
 .highlighted-item {
   height: 40px;
@@ -232,12 +254,12 @@ p {
 }
 .references__collection {
   float: left;
-  margin: 0 0 15px 0;
 }
 .references__item {
   display: block;
   float: left;
   font-size: 0;
+  position: relative;
   width: 100%;
 }
 @media screen and (min-width: 400px) {
@@ -273,9 +295,47 @@ p {
     display: block;
   }
 }
+.references :hover > img {
+  transform: scale(0.9);
+  z-index: 2;
+}
 .references img {
   width: 100%;
   height: auto;
+  position: relative;
+  transition: all 450ms ease;
+  z-index: 4;
+}
+.references img:hover ~ .references__description {
+  bottom: 0;
+  z-index: 3;
+}
+.references__description {
+  background-color: rgba(111, 108, 108, 0.8);
+  bottom: -50px;
+  color: #ffffff;
+  height: 50px;
+  font-size: 14px;
+  left: 0;
+  padding: 5px;
+  position: absolute;
+  transition: all 500ms ease;
+  width: 100%;
+  z-index: -1;
+}
+.references__description:hover {
+  bottom: 0;
+  z-index: 3;
+}
+.references__bottom {
+  background-color: #4b4b4b;
+  clear: both;
+  display: block;
+  float: left;
+  padding: 0px 0 0 0;
+  position: relative;
+  width: 100%;
+  z-index: 9;
 }
 .plus-icon {
   background-color: #4b4b4b;
@@ -322,8 +382,8 @@ p {
 }
 .button--light:hover {
   background-color: #27ce79;
-  box-shadow: 0px 0px 7px #000000;
-  border-color: #3A3838;
+  box-shadow: 0px 0px 7px #B2B4B3;
+  border-color: #C4C4C4;
 }
 .button--light a {
   color: #ffffff;

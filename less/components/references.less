@@ -6,13 +6,13 @@
 
   &__collection{
     float: left;
-    margin: 0 0 15px 0;
   }
 
   &__item{
     display: block;
     float: left;
     font-size: 0;
+    position: relative;
     width: 100%;
 
     @media screen and (min-width: 400px) {
@@ -45,9 +45,56 @@
         display: block;
       }
     }
+  :hover > img{
+    transform: scale(0.9);
+    z-index: 2;
+  }
 
   img{
     width: 100%;
     height: auto;
+    position: relative;
+    transition: all 450ms ease;
+    z-index: 4;
+
+    &:hover ~ .references__description{
+      bottom: 0;
+      z-index: 3;
+    }
+
+
+  }
+
+  &__description{
+    background-color: rgba(111, 108, 108, 0.80);
+    bottom: -50px;
+    color: #ffffff;
+    height: 50px;
+    font-size: 14px;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    transition: all 500ms ease;
+    width: 100%;
+    z-index: -1;
+
+    &:hover{
+      bottom: 0;
+      z-index: 3;
+    }
+
+  }
+
+  &__bottom{
+    background-color: @alpha;
+    clear: both;
+    display: block;
+    float: left;
+    padding: 0px 0 0 0;
+    position: relative;
+    width: 100%;
+    z-index: 9;
   }
 }
+
+.references__item{}
