@@ -55,10 +55,11 @@
     height: auto;
     position: relative;
     transition: all 450ms ease;
-    z-index: 4;
+    z-index: 3;
 
     &:hover ~ .references__description{
       bottom: 0;
+      opacity: 1;
       z-index: 3;
     }
 
@@ -72,14 +73,16 @@
     height: 50px;
     font-size: 14px;
     left: 0;
+    opacity: 0;
     padding: 5px;
     position: absolute;
     transition: all 500ms ease;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 
     &:hover{
       bottom: 0;
+      opacity: 1;
       z-index: 3;
     }
 
