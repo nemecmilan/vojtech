@@ -1,8 +1,6 @@
 @import "../core/variables";
 
 .references{
-  background-color: @alpha;
-  float: left;
 
   &__collection{
     float: left;
@@ -45,9 +43,23 @@
         display: block;
       }
     }
-  :hover > img{
-    transform: scale(0.9);
-    z-index: 2;
+
+  :hover > .references__description{
+    opacity: 1;
+    z-index: 99;
+  }
+  @media screen and(min-width: 990px){
+    :hover > img{
+      transform: scale(1.1);
+      z-index: 50;
+    }
+    :hover > .references__description{
+      opacity: 1 ;
+      text-align: left;
+      width: 110%;
+      z-index: 99;
+    }
+
   }
 
   img{
@@ -55,20 +67,16 @@
     height: auto;
     position: relative;
     transition: all 450ms ease;
-    z-index: 3;
+    z-index: 1;
 
-    &:hover ~ .references__description{
-      bottom: 0;
-      opacity: 1;
-      z-index: 3;
-    }
+
 
 
   }
 
   &__description{
-    background-color: rgba(111, 108, 108, 0.80);
-    bottom: -50px;
+    background-color: rgba(0, 0, 0, 0.35);
+    bottom: 0;
     color: #ffffff;
     height: 50px;
     font-size: 14px;
@@ -76,16 +84,21 @@
     opacity: 0;
     padding: 5px;
     position: absolute;
-    transition: all 500ms ease;
+    transition: width 450ms ease,
+                opacity 450ms ease 100ms;
     width: 100%;
-    z-index: 1;
+  }
+  .references__item:hover > .references__description{
+    opacity: 1;
+    z-index: 99;
 
-    &:hover{
-      bottom: 0;
-      opacity: 1;
-      z-index: 3;
+    @media screen and(min-width: 990px){
+      bottom: -12px;
+      left: -5%;
+      opacity: 1 ;
+      z-index: 99;
+      width: 110%;
     }
-
   }
 
   &__bottom{
@@ -96,7 +109,7 @@
     padding: 0px 0 0 0;
     position: relative;
     width: 100%;
-    z-index: 9;
+    z-index: 1;
   }
 }
 

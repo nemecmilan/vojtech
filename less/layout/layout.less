@@ -1,7 +1,15 @@
 @import "../core/variables";
 
 .section{
+  float: left;
+  text-align: center;
+  width: 100%;
+
+  &--dark{
+    background-color: @alpha;
+  }
   &__title{
+    clear: both;
     padding: 15px 20px;
     margin: 0;
     text-align: center;
@@ -14,8 +22,6 @@
 
 
 .contact{
-  clear: both;
-  text-align: center;
 
   p{
     display: inline-block;

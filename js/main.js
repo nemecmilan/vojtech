@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     var rnd = Math.floor(Math.random() * 9) + 1,
         welcome = $('.welcome');

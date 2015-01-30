@@ -1,26 +1,83 @@
 @import "../core/variables";
 
 .services{
-  background-color: @gamma;
-  float: left;
+
+
+}
+.services__list{
+  display: inline-block;
   text-align: center;
-  width: 100%;
+  margin: 0 10px 10px 10px;
+  padding: 0 5px 5px 17px;
+  vertical-align: top;
 
-  &__list{
-    display: inline-block;
-    text-align: center;
-    margin: 0 10px 10px 10px;
-    padding: 0 5px 5px 17px;
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      background: url("../img/dash.gif") no-repeat left center;
+      list-style: none;
+      padding: 0 0 0 8px;
+      text-align: left;
+    }
+  }
+.services__title{
+  text-align: left;
+  padding: 0 0 2px 0;
+}
+
+.services-block {
+  display: block;
+  float: left;
+  position: relative;
+  width: 33.3333333333333333%;
+
+  img{
+    display: block;
+    height: auto;
+    max-width: 100%;
   }
 
-  ul{
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    background: url("../img/dash.gif") no-repeat left center;
-    list-style: none;
-    padding: 0 0 0 8px;
-    text-align: left;
+  &__label{
+    background-color: rgba(113,184,32,0.4);
+    bottom: 0;
+    height: 120px;
+    position: absolute;
+    width: 100%;
+
+    .services__list{
+      color: #ffffff;
+      display: block;
+      margin: 0;
+      padding: 9px 15px 0;
+      text-align: left;
+    }
+
+//    .services-block {
+//      color: @gamma;
+//      margin: 0;
+//      padding: 10px 15px 5px;
+//      width: 100%;
+//    }
+    ul{
+      font-size: 13px;
+      padding: 5px 0;
+    }
+      li{
+        list-style-image: none;
+        padding: 0;
+      }
+    p{
+      font-size: 13px;
+    }
   }
 }
+.services-block__label--houses{ background-color: rgba(17, 106, 25, 0.76);}
+.services-block__label--flats{ background-color: rgba(127, 64, 217, 0.42);}
+.services-block__label--facade{ background-color: rgba(0, 97, 134, 0.50);}
+.services-block__label--roof{ background-color: rgba(236, 0, 140, 0.40);}
+.services-block__label--drywall{ background-color: rgba(164, 183, 33, 0.65);}
+.services-block__label--fence{ background-color: rgba(0, 97, 134, 0.50);}
+.services-block__label--transport{ background-color: rgba(25, 157, 106, 0.39);}
+.services-block__label--stairs{ background-color: rgba(36, 85, 142, 0.57);}
