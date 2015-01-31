@@ -1,116 +1,97 @@
 @import "../core/variables";
 
-.references{
-
-  &__collection{
-    float: left;
-  }
-
-  &__item{
-    display: block;
-    float: left;
-    font-size: 0;
-    position: relative;
-    width: 100%;
-
-    @media screen and (min-width: 400px) {
-      width: 50%;
-    }
-    @media screen and (min-width: 550px) {
-      width: 33.333333333%;
-    }
-    @media screen and (min-width: 800px) {
-      width: 25%;
-    }
-  }
-    &__item:nth-last-of-type(5),
-    &__item:nth-last-of-type(4),
-    &__item:nth-last-of-type(3),
-    &__item:nth-last-of-type(2){
-        display: none;
-    }
-
-    &__item:nth-last-child(4),
-    &__item:nth-last-child(5){
-        @media screen and (min-width: 550px) {
-          display: block;
-        }
-    }
-
-    &__item:nth-last-child(3),
-    &__item:nth-last-child(2){
-      @media screen and (min-width: 800px) {
-        display: block;
-      }
-    }
-
-  :hover > .references__description{
-    opacity: 1;
-    z-index: 99;
-  }
-  @media screen and(min-width: 990px){
-    :hover > img{
-      transform: scale(1.1);
-      z-index: 50;
-    }
-    :hover > .references__description{
-      opacity: 1 ;
-      text-align: left;
-      width: 110%;
-      z-index: 99;
-    }
-
-  }
-
-  img{
-    width: 100%;
-    height: auto;
-    position: relative;
-    transition: all 450ms ease;
-    z-index: 1;
-
-
-
-
-  }
-
-  &__description{
-    background-color: rgba(0, 0, 0, 0.35);
-    bottom: 0;
-    color: #ffffff;
-    height: 50px;
-    font-size: 14px;
-    left: 0;
-    opacity: 0;
-    padding: 5px;
-    position: absolute;
-    transition: width 450ms ease,
-                opacity 450ms ease 100ms;
-    width: 100%;
-  }
-  .references__item:hover > .references__description{
-    opacity: 1;
-    z-index: 99;
-
-    @media screen and(min-width: 990px){
-      bottom: -12px;
-      left: -5%;
-      opacity: 1 ;
-      z-index: 99;
-      width: 110%;
-    }
-  }
-
-  &__bottom{
-    background-color: @alpha;
-    clear: both;
-    display: block;
-    float: left;
-    padding: 0px 0 0 0;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-  }
+.references__collection{
+  float: left;
+  margin: 0px 0 30px;
+  width: 100%;
 }
+  .references__collection .tertiary{
+    font-size: 18px;
+    margin: 5px 20px;
+  }
+  .references__collection p{
+    font-size: 14px;
+    margin: 5px 20px;
+  }
 
-.references__item{}
+  .references__item{
+      display: block;
+      float: left;
+      font-size: 0;
+      position: relative;
+      width: 50%;
+
+      @media screen and (min-width: 550px) {
+        width: 33.333333333%;
+      }
+      @media screen and (min-width: 800px) {
+        width: 20%;
+      }
+  }
+  //.references__item:nth-last-of-type(5),
+  //.references__item:nth-last-of-type(4),
+  //.references__item:nth-last-of-type(3),
+  //.references__item:nth-last-of-type(2){
+  //        display: none;
+  //    }
+  //
+  //.references__item:nth-last-child(3),
+  //.references__item:nth-last-child(4),
+  //.references__item:nth-last-child(5){
+  //        @media screen and (min-width: 550px) {
+  //          display: block;
+  //        }
+  //    }
+  //
+  //.references__item:nth-last-child(2){
+  //      @media screen and (min-width: 800px) {
+  //        display: block;
+  //      }
+  //    }
+
+
+  .references img{
+      width: 100%;
+      height: auto;
+      position: relative;
+      transition: all 450ms ease;
+      z-index: 2;
+    }
+
+  .references__description{
+      background-color: rgba(0, 0, 0, 0.40);
+      bottom: 0;
+      color: #ffffff;
+      height: 50px;
+      font-size: 14px;
+      left: 0;
+  //    opacity: 0;
+      padding: 5px;
+      position: absolute;
+  //    transition: bottom 450ms ease,
+  //                z-index 450ms ease ;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .references__item:hover > .references__description{
+  //    bottom: 0px;
+  //    opacity: 1;
+      z-index: 3;
+
+  //    @media screen and(min-width: 990px){
+  //      opacity: 1 ;
+  //      z-index: 9;
+  //    }
+    }
+
+  .references__bottom{
+      background-color: @alpha;
+      clear: both;
+      display: block;
+      float: left;
+      padding: 0px 0 0 0;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+    }

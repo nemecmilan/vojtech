@@ -40,6 +40,10 @@ a {
 p {
   margin: 0;
 }
+strong {
+  font-size: 14px;
+  font-weight: normal;
+}
 .section {
   float: left;
   text-align: center;
@@ -69,6 +73,24 @@ p {
 .contact .email {
   background: url("../img/email-icon.png") no-repeat left center;
 }
+.contact__table {
+  margin: 0 auto;
+}
+.contact__table tr {
+  height: 40px;
+}
+.contact__table td,
+.contact__table th {
+  min-width: 130px;
+  vertical-align: top;
+  text-align: left;
+}
+.map {
+  max-width: 550px;
+  height: auto;
+  margin: 20px auto;
+  width: 100%;
+}
 .footer {
   background-color: #4b4b4b;
   clear: both;
@@ -84,7 +106,7 @@ p {
   color: #ffffff;
 }
 .welcome {
-  background: url("../img/construction-tools-small.jpg") no-repeat center top;
+  background: url("../img/welcome_background/8.jpg") no-repeat center top;
   text-align: center;
   padding: 0 0 25px;
 }
@@ -365,20 +387,30 @@ p {
 .services-block__label--stairs {
   background-color: rgba(36, 85, 142, 0.57);
 }
+.services strong {
+  display: block;
+  text-align: left;
+  padding: 0 35px 25px;
+}
 .references__collection {
   float: left;
+  margin: 0px 0 30px;
+  width: 100%;
+}
+.references__collection .tertiary {
+  font-size: 18px;
+  margin: 5px 20px;
+}
+.references__collection p {
+  font-size: 14px;
+  margin: 5px 20px;
 }
 .references__item {
   display: block;
   float: left;
   font-size: 0;
   position: relative;
-  width: 100%;
-}
-@media screen and (min-width: 400px) {
-  .references__item {
-    width: 50%;
-  }
+  width: 50%;
 }
 @media screen and (min-width: 550px) {
   .references__item {
@@ -387,41 +419,7 @@ p {
 }
 @media screen and (min-width: 800px) {
   .references__item {
-    width: 25%;
-  }
-}
-.references__item:nth-last-of-type(5),
-.references__item:nth-last-of-type(4),
-.references__item:nth-last-of-type(3),
-.references__item:nth-last-of-type(2) {
-  display: none;
-}
-@media screen and (min-width: 550px) {
-  .references__item:nth-last-child(4),
-  .references__item:nth-last-child(5) {
-    display: block;
-  }
-}
-@media screen and (min-width: 800px) {
-  .references__item:nth-last-child(3),
-  .references__item:nth-last-child(2) {
-    display: block;
-  }
-}
-.references :hover > .references__description {
-  opacity: 1;
-  z-index: 99;
-}
-@media screen and (min-width: 990px) {
-  .references :hover > img {
-    transform: scale(1.1);
-    z-index: 50;
-  }
-  .references :hover > .references__description {
-    opacity: 1 ;
-    text-align: left;
-    width: 110%;
-    z-index: 99;
+    width: 20%;
   }
 }
 .references img {
@@ -429,34 +427,22 @@ p {
   height: auto;
   position: relative;
   transition: all 450ms ease;
-  z-index: 1;
+  z-index: 2;
 }
 .references__description {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.4);
   bottom: 0;
   color: #ffffff;
   height: 50px;
   font-size: 14px;
   left: 0;
-  opacity: 0;
   padding: 5px;
   position: absolute;
-  transition: width 450ms ease,
-                opacity 450ms ease 100ms;
   width: 100%;
+  z-index: 1;
 }
-.references .references__item:hover > .references__description {
-  opacity: 1;
-  z-index: 99;
-}
-@media screen and (min-width: 990px) {
-  .references .references__item:hover > .references__description {
-    bottom: -12px;
-    left: -5%;
-    opacity: 1 ;
-    z-index: 99;
-    width: 110%;
-  }
+.references__item:hover > .references__description {
+  z-index: 3;
 }
 .references__bottom {
   background-color: #4b4b4b;
