@@ -25,33 +25,57 @@
 .services__title{
   text-align: left;
   padding: 0 0 2px 0;
+  font-size: 14px;
+
+  @media screen and(min-width: 400px) {
+    font-size: 106.25%;
+  }
+  @media screen and(min-width: 720px) {
+    font-size: 106.25%;
+  }
 }
 
 .services-block {
   display: block;
   float: left;
   position: relative;
-  width: 33.3333333333333333%;
+  width: 50%;
+
+  @media screen and(min-width: 400px) {
+    width: 50%;
+  }
+  @media screen and(min-width: 580px) {
+    width: 33.333333333333%;
+  }
 
   img{
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
   }
 
   &__label{
     background-color: rgba(113,184,32,0.4);
     bottom: 0;
-    height: 120px;
+    height: 100%;
     position: absolute;
     width: 100%;
+      @media screen and(min-width: 400px) {
+        height: 100%;
+      }
+      @media screen and(min-width: 720px) {
+        height: 135px;
+      }
 
     .services__list{
       color: #ffffff;
       display: block;
       margin: 0;
-      padding: 9px 15px 0;
+      padding: 9px 5px 0;
       text-align: left;
+        @media screen and(min-width: 400px) {
+          padding: 9px 15px 0;
+        }
     }
 
 //    .services-block {
