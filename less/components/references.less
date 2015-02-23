@@ -2,13 +2,16 @@
 
 .references__collection{
   float: left;
-  margin: 0px 0 30px;
+  margin: 0;
   width: 100%;
 }
   .references__collection .tertiary{
     font-size: 18px;
-    margin: 5px 20px;
+    margin: 30px 20px 5px;
   }
+    .references__collection:first-of-type .tertiary{
+      margin-top: 5px;
+    }
   .references__collection p{
     font-size: 14px;
     margin: 5px 20px;
@@ -28,26 +31,38 @@
         width: 20%;
       }
   }
-  //.references__item:nth-last-of-type(5),
-  //.references__item:nth-last-of-type(4),
-  //.references__item:nth-last-of-type(3),
-  //.references__item:nth-last-of-type(2){
-  //        display: none;
-  //    }
-  //
-  //.references__item:nth-last-child(3),
-  //.references__item:nth-last-child(4),
-  //.references__item:nth-last-child(5){
-  //        @media screen and (min-width: 550px) {
-  //          display: block;
-  //        }
-  //    }
-  //
-  //.references__item:nth-last-child(2){
-  //      @media screen and (min-width: 800px) {
-  //        display: block;
-  //      }
-  //    }
+
+  .references__item:nth-last-child(1),
+  .references__item:nth-last-child(2){
+        @media screen and (min-width: 550px) {
+          display: none;
+        }
+        @media screen and (min-width: 800px) {
+          display: block;
+        }
+      }
+
+    .references__collection-2row .references__item{
+      @media screen and (min-width: 550px) {
+        width: 33.333333333%;
+      }
+      @media screen and (min-width: 800px) {
+        width: 20%;
+      }
+    }
+      .references__collection-2row .references__item:nth-last-child(1){
+        @media screen and (min-width: 550px) {
+          display: none;
+        }
+        @media screen and (min-width: 800px) {
+          display: block;
+        }
+      }
+    .references__collection-2row .references__item:nth-last-child(1){
+      @media screen and (min-width: 550px) {
+        display: block;
+      }
+    }
 
 
   .references img{
@@ -70,6 +85,7 @@
       position: absolute;
   //    transition: bottom 450ms ease,
   //                z-index 450ms ease ;
+      text-align: center;
       width: 100%;
       z-index: 1;
     }

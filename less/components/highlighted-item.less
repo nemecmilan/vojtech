@@ -66,18 +66,22 @@
     border-radius: 40px 40px 40px 40px;
     color: #ffffff;
     display: inline-block;
-    font-size: 100%;
     height: 30px;
     margin: 0 0 0 0px;
     opacity: 0;
-    padding: 6px 5px 0;
     position: relative;
-    top: -8px;
+    padding: 7px 5px 0;
+    top: -11px;
+    font-size: 13px;
 
     &--visible{
       opacity: 1;
     }
-
+    @media screen and (min-width: 360px){
+      font-size: 100%;
+      padding: 6px 5px 0;
+      top: -8px;
+    }
     @media screen and (min-width: 550px){
       font-size: 21px;
       height: 40px;

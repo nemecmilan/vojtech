@@ -1,2 +1,5 @@
+User-agent: *
 
-Disallow: /test/
+Disallow: 
+
+Sitemap: http://www.ondrejvojtech.cz/sitemap.xml
