@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+﻿/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -790,6 +790,7 @@ p.is-center {
   margin: 0;
   padding: 9px 5px 0;
   text-align: left;
+
 }
 @media screen and (min-width: 400px) {
   .services-block__label .services__list {
